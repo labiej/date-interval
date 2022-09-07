@@ -1,0 +1,19 @@
+{
+  "name": "date-interval-samples",
+  "version": "1.0.0",
+  "description": "Some algorithms for working with date intervals",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joris Labie",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.7.16",
+    "js-joda": "^1.11.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.2"
+  }
+}
