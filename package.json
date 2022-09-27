@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "test": "karma start",
+    "test:single": "karma start --single-run --browsers ChromeHeadless",
     "watch": "nodemon --ext ts --exec './node_modules/.bin/jasmine --config=jasmine.json'"
   },
   "author": "Joris Labie",

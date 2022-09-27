@@ -19,4 +19,4 @@ jobs:
       - name: run tests
         run: |
           npm install
-          npm test
+          npm run test:single
