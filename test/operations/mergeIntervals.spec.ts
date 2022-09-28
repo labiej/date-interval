@@ -39,11 +39,24 @@ describe('merging overlapping intervals', () => {
 
         const merged = mergeIntervals(input, (l, r) => l.overlaps(r));
 
+        const expected = [new DateInterval(y2k, dec2020)];
+
         expect(merged.length).toBe(1);
-        expect(merged[0]).toEqual(new DateInterval(y2k, dec2020));
+        expect(merged).toEqual(expected);
     });
 
     it('should not merge non-overlapping intervals', () => {
+        const input = [
+            new DateInterval(y2k, sep2010),
+            new DateInterval(sep2019, dec2020),
+            new DateInterval(dec2020.minusWeeks(10))
+        ];
 
+        const merged = mergeIntervals(input, (l, r) => l.overlaps(r));
+
+        const expected = [new DateInterval(y2k, sep2010), new DateInterval(sep2019)];
+
+        expect(merged.length).toBe(2);
+        expect(merged).toEqual(expected);
     });
 });
