@@ -1,4 +1,4 @@
-import { LocalDate } from "js-joda";
+import { LocalDate } from "@js-joda/core";
 
 export const y2k = LocalDate.of(2000, 1, 1);
 export const sep2010 = LocalDate.of(2010, 9, 10);

@@ -1,4 +1,4 @@
-import { LocalDate } from 'js-joda';
+import { LocalDate } from "@js-joda/core";
 import { DateInterval } from '../../src/types/DateInterval';
 import { orderIntervals } from '../../src/operations/orderIntervals';
 

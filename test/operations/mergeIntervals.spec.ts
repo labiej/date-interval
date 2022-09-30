@@ -1,5 +1,5 @@
 import { mergeIntervals, shouldMergeCallback } from '../../src/operations/mergeIntervals';
-import { LocalDate } from 'js-joda';
+import { LocalDate } from "@js-joda/core";
 import { DateInterval } from '../../src/types/DateInterval';
 import { dec2020, feb2020, sep2010, sep2019, y2k } from '../data/data.spec';
 

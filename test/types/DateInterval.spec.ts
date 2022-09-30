@@ -1,4 +1,4 @@
-import { LocalDate } from "js-joda";
+import { LocalDate } from "@js-joda/core";
 import { DateInterval } from "../../src/types/DateInterval"
 import { y2k, sep2010, sep2019, feb2020, dec2020 } from "../data/data.spec";
 
